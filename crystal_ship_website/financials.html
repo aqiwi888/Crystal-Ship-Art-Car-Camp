@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financials - The Crystal Ship Art Car</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Add specific styles for the financials table */
+        .financials-table {
+            width: 100%;
+            margin-top: 2rem;
+            border-collapse: collapse;
+            background-color: rgba(10, 25, 47, 0.7) ;
+        }
+        .financials-table th, .financials-table td {
+            border: 1px solid var(--crystal-green);
+            padding: 0.8rem;
+            text-align: left;
+        }
+        .financials-table th {
+            background-color: var(--dark-navy);
+            color: var(--crystal-green);
+        }
+        .financials-table tr:nth-child(even) {
+            background-color: rgba(10, 25, 47, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="logo">The Crystal Ship</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="dues.html">Dues</a></li>
+                    <li><a href="financials.html">Financials</a></li>
+                    <li><a href="location.html">Location</a></li> <!-- Added Location link -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="financials">
+        <div class="container">
+            <h2 class="section-title">Camp Financial Transparency</h2>
+            <div class="financials-content">
+                <p>In the spirit of transparency, we share our camp financials with all members. Below is a summary of income and expenses. This information is manually updated periodically based on our camp Google Sheet.</p>
+                <p>Last Updated: [Date]</p>
+                
+                <!-- Financial Summary Section - Manually Update This -->
+                <div class="financial-summary">
+                    <h3>Income Summary</h3>
+                    <table class="financials-table">
+                        <thead>
+                            <tr>
+                                <th>Source</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Camp Dues Received</td>
+                                <td>$[Amount]</td>
+                            </tr>
+                            <tr>
+                                <td>Northern Night Music Festival</td>
+                                <td>$[Amount]</td>
+                            </tr>
+                            <tr>
+                                <td>Donations</td>
+                                <td>$[Amount]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total Income</strong></td>
+                                <td><strong>$[Total Amount]</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3 style="margin-top: 2rem;">Expense Summary</h3>
+                    <table class="financials-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Art Car Transport</td>
+                                <td>$[Amount]</td>
+                            </tr>
+                            <tr>
+                                <td>Art Car Fuel</td>
+                                <td>$[Amount]</td>
+                            </tr>
+                            <tr>
+                                <td>Sound</td>
+                                <td>$[Amount]</td>
+                            </tr>
+                             <tr>
+                                <td>Talent</td>
+                                <td>$[Amount]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total Expenses</strong></td>
+                                <td><strong>$[Total Amount]</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End of Financial Summary Section -->
+                
+                <p style="margin-top: 2rem;">For a detailed breakdown, please refer to the camp Google Sheet shared with members.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 The Crystal Ship Art Car. All rights reserved.</p>
+                    <p>For inquiries: info@thecrystalshipartcar.net</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

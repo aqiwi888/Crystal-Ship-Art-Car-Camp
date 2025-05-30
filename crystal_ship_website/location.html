@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Ship Location - Live Map</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        #map {
+            height: 60vh; /* Adjust height as needed */
+            width: 100%;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2) ;
+        }
+        .location-info {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .location-info p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .map-links {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .map-links .btn {
+            margin: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="logo">The Crystal Ship</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="dues.html">Dues</a></li>
+                    <li><a href="financials.html">Financials</a></li>
+                    <li><a href="location.html">Location</a></li> <!-- Added Location link -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="location-page">
+        <div class="container">
+            <h2 class="section-title">Crystal Ship - Live Location</h2>
+            
+            <div id="map"></div>
+
+            <div class="location-info">
+                <p>Current Location: <span id="current-coords">Loading...</span></p>
+                <p>Last Updated: <span id="last-updated">N/A</span></p>
+            </div>
+
+            <div class="map-links">
+                <a id="google-maps-link" href="#" class="btn" target="_blank">Open in Google Maps</a>
+                <a id="apple-maps-link" href="#" class="btn" target="_blank">Open in Apple Maps</a>
+            </div>
+
+            <p style="text-align:center; font-size:0.9rem;">Location updates periodically. Please refresh if needed or if the map doesn't load immediately.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 The Crystal Ship Art Car. All rights reserved.</p>
+                    <p>For inquiries: aqiwi888@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- IMPORTANT: Google Maps API Script - YOU WILL NEED TO GET YOUR OWN API KEY -->
+    <!-- Replace YOUR_GOOGLE_MAPS_API_KEY with your actual API key -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
