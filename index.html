@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crystal Ship Art Car - Burning Man Camp</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-192x192.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">The Crystal Ship</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="dues.html">Dues</a></li>
+                <li><a href="financials.html">Financials</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="#" id="signInBtn" class="sign-in-btn">Sign In / Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to The Crystal Ship</h1>
+            <p>This is The Spot For Crystal Ship Camp info and Playa event Schedule</p>
+            <a href="schedule.html" class="cta-button">View Our Schedule</a>
+        </section>
+
+        <section class="about">
+            <h2>About Our Camp</h2>
+            <p>The Crystal Ship is a Burning Man art car camp featuring a magnificent vehicle adorned with glowing crystal formations. Our camp provides a unique experience for Burners, offering rides, events, and a welcoming community space.</p>
+            <p>Join us for daily adventures across the playa, evening light shows, and special events throughout the week. Our camp members are dedicated to creating magical experiences and fostering connections within the Burning Man community.</p>
+        </section>
+
+        <section class="explore">
+            <h2>Explore Our Camp</h2>
+            <div class="explore-grid">
+                <div class="explore-item">
+                    <h3>Photo Gallery</h3>
+                    <p>View stunning images of The Crystal Ship art car in action</p>
+                    <a href="gallery.html" class="explore-link">View Gallery</a>
+                </div>
+                <div class="explore-item">
+                    <h3>Camp Merchandise</h3>
+                    <p>Get your official Crystal Ship gear and support our art car</p>
+                    <a href="store.html" class="explore-link">Visit Store</a>
+                </div>
+                <div class="explore-item">
+                    <h3>Event Schedule</h3>
+                    <p>Check out our daily events and art car schedule</p>
+                    <a href="schedule.html" class="explore-link">See Schedule</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Crystal Ship Art Car. All rights reserved.</p>
+        <p>For inquiries: <a href="mailto:info@thecrystalshipartcar.net">info@thecrystalshipartcar.net</a></p>
+    </footer>
+
+    <!-- Sign In Modal -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign In / Join The Crystal Ship</h2>
+            
+            <div class="disclaimer-box">
+                <p><strong>IMPORTANT: Data Protection Notice</strong></p>
+                <p>The Crystal Ship website does not provide data protection or security for any information you submit. All sensitive transactions (payments, purchases) are handled by external services like Stripe and Printify. Please do not share sensitive information that you wouldn't want publicly accessible.</p>
+            </div>
+            
+            <form id="emailForm">
+                <div class="form-group">
+                    <label for="email">Enter your email to sign in or register:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="submit-btn">Continue</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content registration-content">
+            <span class="close reg-close">&times;</span>
+            <h2>Join The Crystal Ship Camp</h2>
+            
+            <div class="disclaimer-box">
+                <p><strong>IMPORTANT: Data Protection Notice</strong></p>
+                <p>The Crystal Ship website does not provide data protection or security for any information you submit. All sensitive transactions (payments, purchases) are handled by external services like Stripe and Printify. Please do not share sensitive information that you wouldn't want publicly accessible.</p>
+            </div>
+            
+            <form id="registrationForm">
+                <input type="hidden" id="regEmail" name="email">
+                
+                <div class="form-section">
+                    <h3>Registration Information</h3>
+                    <div class="form-group">
+                        <label for="fullName">Name:</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bmExperience">Burning Man Experience:</label>
+                        <select id="bmExperience" name="bmExperience" required>
+                            <option value="">Select one</option>
+                            <option value="First Timer">First Timer</option>
+                            <option value="1-2 Burns">1-2 Burns</option>
+                            <option value="3-5 Burns">3-5 Burns</option>
+                            <option value="6-10 Burns">6-10 Burns</option>
+                            <option value="10+ Burns">10+ Burns</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nameDrops">Name Drops (references/connections):</label>
+                        <textarea id="nameDrops" name="nameDrops" rows="3" placeholder="List any camp members you know or who referred you"></textarea>
+                    </div>
+                    
+                    <!-- Vehicle Information with Conditional Fields -->
+                    <div class="form-group">
+                        <label for="vehicleType">Vehicle Driving In:</label>
+                        <select id="vehicleType" name="vehicleType" required>
+                            <option value="">Select one</option>
+                            <option value="None">Not bringing a vehicle</option>
+                            <option value="RV">RV</option>
+                            <option value="Car">Car/SUV/Truck</option>
+                            <option value="Truck_Trailer">Truck with Trailer</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Conditional RV fields -->
+                    <div id="rvFields" class="conditional-fields" style="display: none;">
+                        <div class="form-group">
+                            <label for="rvLength">RV Length (in feet):</label>
+                            <input type="number" id="rvLength" name="rvLength" min="1" max="50" placeholder="e.g., 24">
+                        </div>
+                    </div>
+                    
+                    <!-- Conditional Car/SUV/Truck fields -->
+                    <div id="carFields" class="conditional-fields" style="display: none;">
+                        <div class="form-group">
+                            <label for="carMake">Make:</label>
+                            <input type="text" id="carMake" name="carMake" placeholder="e.g., Toyota">
+                        </div>
+                        <div class="form-group">
+                            <label for="carYear">Year:</label>
+                            <input type="number" id="carYear" name="carYear" min="1900" max="2030" placeholder="e.g., 2022">
+                        </div>
+                        <div class="form-group">
+                            <label for="carModel">Model:</label>
+                            <input type="text" id="carModel" name="carModel" placeholder="e.g., 4Runner">
+                        </div>
+                    </div>
+                    
+                    <!-- Conditional Truck with Trailer fields -->
+                    <div id="trailerFields" class="conditional-fields" style="display: none;">
+                        <div class="form-group">
+                            <label for="trailerSize">Trailer Size:</label>
+                            <input type="text" id="trailerSize" name="trailerSize" placeholder="e.g., 12x8 ft">
+                        </div>
+                    </div>
+                    
+                    <!-- Event Entry and Exit Dates -->
+                    <div class="form-group">
+                        <label for="entryDate">Perceived Event Entry Date:</label>
+                        <input type="date" id="entryDate" name="entryDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exitDate">Perceived Event Exit Date:</label>
+                        <input type="date" id="exitDate" name="exitDate" required>
+                    </div>
+                </div>
+                
+                <div class="form-group consent-group">
+                    <label>
+                        <input type="checkbox" id="dataConsent" name="dataConsent" required>
+                        I understand that my information is not protected on this website and may be visible to others.
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content success-content">
+            <span class="close success-close">&times;</span>
+            <h2>Welcome to The Crystal Ship!</h2>
+            <p>You've successfully registered for our camp. You can now access all camp information and resources.</p>
+            <p>Remember that camp dues need to be paid separately through our Dues page.</p>
+            <button id="continueBtn" class="submit-btn">Continue to Site</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
